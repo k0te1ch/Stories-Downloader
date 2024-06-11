@@ -1,0 +1,13 @@
+{
+    "name": "Stories Downloader",
+    "description": "Downloader stories from VK",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+        {
+            "matches": ["*://vk.com/*"],
+            "js": ["app.js"]
+        }
+    ]
+}
